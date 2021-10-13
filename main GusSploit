@@ -1,0 +1,111 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("GusSploit") -- Creates the window
+
+local b = w:CreateFolder("The GUI") -- Creates the folder(U will put here your buttons,etc)
+
+
+
+b:Button("Armor Troll (FE)",function()
+    local cpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+local character = game.Players.LocalPlayer.Character 
+character.HumanoidRootPart.CFrame = CFrame.new(-11,265,61)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cpos
+wait(0.1)
+character.Chest:Destroy()
+wait(0.1)
+character.Arm1:Destroy()
+wait(0.1)
+character.Arm2:Destroy()
+wait(0.1)
+character.Leg1:Destroy()
+wait(0.1)
+character.Leg2:Destroy()
+end)
+
+b:Button("No Sword Mesh",function()
+    local playerName = game.Players.LocalPlayer.Name
+	game.Workspace:FindFirstChild(playerName).Sword.Handle.Mesh:Destroy()
+end)
+
+b:Button("Anticheat Bypass",function()
+    game:GetService("Players").LocalPlayer.PlayerGui.Extra.AntiSploitClient2:Destroy()
+    wait(1)
+    game:GetService("Players").LocalPlayer.PlayerGui.Extra.AntiSploitClient:Destroy()
+end)
+
+b:Button("Reach",function()
+    for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do
+        if v:isA("Tool") then
+            local a = Instance.new("SelectionBox",v.Handle)
+            a.Adornee = v.Handle
+            v.Handle.Size = Vector3.new(0.5,0.5,60)
+            v.GripPos = Vector3.new(0,0,0)
+            lplayer.Character.Humanoid:UnequipTools()
+        end
+end
+end)
+b:Button("Autofarm",function()
+    local cpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+
+local stuff = workspace:getDescendants()
+for i=1,#stuff do
+if stuff[i].Name == "Block" and stuff[i].Parent.Name == "Ores" then
+repeat
+wait()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = stuff[i].CFrame
+game.Players.LocalPlayer.Character.Axe.RemoteEvent:FireServer(stuff[i])
+until stuff[i].Name ~= "Block" or not game.Players.LocalPlayer.Character:findFirstChild("Axe")
+end
+end
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cpos
+end)
+
+
+
+
+
+
+b:Button("Armor",function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-10,265,61)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+b:Button("Helmet",function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(12,265,79)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+b:Button("TP to mid",function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-0,195,0)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+
+
+b:Bind("Heal",Enum.KeyCode.R,function() --Default bind
+    local cpos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+    local character = game.Players.LocalPlayer.Character 
+    character.HumanoidRootPart.CFrame = CFrame.new(12, 264, 79)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = cpos
+    character.gotHelmet:Destroy()
+    
+end)
+
+
+print ("gus on top")  
