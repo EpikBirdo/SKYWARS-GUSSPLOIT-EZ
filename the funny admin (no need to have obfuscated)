@@ -129,8 +129,14 @@ for slower tool animation processing.
 		local pos = p1.CFrame
 
 		p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
-	elseif cht:match("/tpshopfucker")then
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(58.9466209, 264, -0.0603171512)
+	elseif cht:match(".find")then
+				local args = {
+    [1] = "Peek A Boo ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
 	elseif cht:match("/vipfucker") then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.00376499468, 264, -70.1360855)
 	elseif cht:match("/removewallsfucker")then
