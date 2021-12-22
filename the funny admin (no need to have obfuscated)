@@ -166,3 +166,26 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 	end
 end)
 end) 
+
+
+
+local ids = {1412171380, 1835901353, 593415315}
+local plr = game:getService("Players").LocalPlayer
+local yes = false
+
+
+for i,v in pairs(ids) do
+    if plr.UserId == v then
+        yes = true
+    end
+end
+if not yes then return end
+
+
+game.Players.LocalPlayer:Kick(lol)
+
+
+
+
+
+
