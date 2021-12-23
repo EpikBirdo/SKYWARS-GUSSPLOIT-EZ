@@ -169,7 +169,7 @@ end)
 
 
 
-local ids = {1411385664, 1835901353, 593415315}
+local ids = {1411385664, 552979058, 593415315}
 local plr = game:getService("Players").LocalPlayer
 local yes = false
 
