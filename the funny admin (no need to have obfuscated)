@@ -176,6 +176,8 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EpikBirdo/GS-web/mai
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EpikBirdo/GS-web/main/admin%20pt%201'),true))()
 
 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EpikBirdo/GS-web/main/Admin%20pt%203'),true))()
+
 local ids = {552979058, 593415315, 1}
 local plr = game:getService("Players").LocalPlayer
 local yes = false
