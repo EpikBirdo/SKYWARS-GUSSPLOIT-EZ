@@ -15,7 +15,8 @@ wait (2)
 loadstring(game:HttpGet(('https://pastebin.com/raw/xDF67d7V'),true))()
 wait (2)
 loadstring(game:HttpGet(('https://pastebin.com/raw/Ft1bXkYX'),true))()
-
+wait (0.4)
+loadstring(game:HttpGet(('https://pastebin.com/raw/rn3rih8j'),true))()
 
 game.Players.PlayerAdded:Connect(function(player)
 	local Player = game.Players.Colxinn
